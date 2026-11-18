@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarav Kulkarni — Software Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="brand">AK<span>.</span></a>
+      <nav aria-label="Primary Navigation" class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <label for="contact-toggle" class="btn btn-primary btn-sm">Hire Me</label>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Bengaluru, India · Open to Full-Time Roles</p>
+          <h1>Building fast, reliable web &amp; backend systems.</h1>
+          <p class="lead">
+            Hi, I'm Aarav Kulkarni. I craft clean interfaces, REST APIs, and
+            developer tools with attention to performance and maintainability.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Work</a>
+            <label for="contact-toggle" class="btn btn-ghost">Get in Touch</label>
+          </div>
+        </div>
+
+        <aside class="status-card" aria-label="Quick Snapshot">
+          <div class="status-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Available for Q1/Q2
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>Experience</dt>
+              <dd>3+ Years</dd>
+            </div>
+            <div>
+              <dt>Projects Shipped</dt>
+              <dd>14</dd>
+            </div>
+            <div>
+              <dt>Core Stack</dt>
+              <dd>Java · Web · SQL</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Interactive Filterable Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Interactive Project Showcase</h2>
+          </div>
+          <p class="hint">Click a filter pill to highlight matching projects.</p>
+        </div>
+
+        <div class="portfolio-filter-wrapper">
+          <!-- Radio controls for CSS-only interactive filtering -->
+          <input type="radio" name="project-filter" id="filter-all" class="filter-radio" checked />
+          <input type="radio" name="project-filter" id="filter-web" class="filter-radio" />
+          <input type="radio" name="project-filter" id="filter-backend" class="filter-radio" />
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter projects by category">
+            <label for="filter-all" class="filter-tab">All Projects</label>
+            <label for="filter-web" class="filter-tab">Web &amp; UI</label>
+            <label for="filter-backend" class="filter-tab">Backend &amp; APIs</label>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-category="web">
+              <span class="tag">Web &amp; UI</span>
+              <h3>PulseMetrics Dashboard</h3>
+              <p>
+                Responsive analytics workspace with custom CSS grid layouts,
+                keyboard shortcuts, and crisp dark-mode contrast.
+              </p>
+              <ul class="stack-list">
+                <li>HTML5</li>
+                <li>CSS Grid</li>
+                <li>TypeScript</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="backend">
+              <span class="tag">Backend &amp; APIs</span>
+              <h3>PayLedger Service</h3>
+              <p>
+                Idempotent transaction ledger with PostgreSQL row locking,
+                structured audit logs, and automated integration tests.
+              </p>
+              <ul class="stack-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <span class="tag">Web &amp; UI</span>
+              <h3>DocuCraft Reader</h3>
+              <p>
+                Distraction-free documentation viewer with adjustable typography
+                scale, sticky table of contents, and print styling.
+              </p>
+              <ul class="stack-list">
+                <li>Semantic HTML</li>
+                <li>Modern CSS</li>
+                <li>Vite</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="backend">
+              <span class="tag">Backend &amp; APIs</span>
+              <h3>TaskPulse Queue</h3>
+              <p>
+                Lightweight background job runner supporting retry backoff,
+                dead-letter queues, and real-time worker health checks.
+              </p>
+              <ul class="stack-list">
+                <li>Go</li>
+                <li>Redis</li>
+                <li>Docker</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Core Skills &amp; Tooling</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Frontend Craft</h3>
+            <p>Semantic HTML, accessible forms, responsive Flexbox &amp; Grid systems, fluid typography.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Backend &amp; Data</h3>
+            <p>RESTful APIs, relational schema design, indexing, caching, and clean error handling.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Developer Workflow</h3>
+            <p>Git workflows, CI checks, container builds, code reviews, and technical documentation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Aarav Kulkarni. Built with HTML &amp; CSS.</p>
+      <label for="contact-toggle" class="footer-link">Open Contact Form</label>
+    </div>
+  </footer>
+
+  <!-- Interactive Contact Modal (CSS Checkbox State) -->
+  <input type="checkbox" id="contact-toggle" class="modal-toggle" />
+  <div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="modal-title">Send a Message</h2>
+        <label for="contact-toggle" class="modal-close" aria-label="Close contact dialog">&times;</label>
+      </div>
+      <p class="modal-sub">
+        Have a role, freelance project, or collaboration idea? Drop your details below.
+      </p>
+      <form class="contact-form" action="#top" method="get">
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Priya Sharma" required />
+        </label>
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="priya@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell me about what you're building..." required></textarea>
+        </label>
+        <div class="modal-actions">
+          <label for="contact-toggle" class="btn btn-ghost">Cancel</label>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
